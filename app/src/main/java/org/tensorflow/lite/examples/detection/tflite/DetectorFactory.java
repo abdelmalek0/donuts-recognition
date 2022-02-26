@@ -17,7 +17,7 @@ public class DetectorFactory {
         int[] anchors = new int[]{0};
 
         if (modelFilename.equals("yolov5n.tflite")) {
-            labelFilename = "file:///android_asset/coco.txt";
+            labelFilename = "file:///android_asset/classes.txt";
             isQuantized = false;
             inputSize = 640;
             output_width = new int[]{80, 40, 20};
@@ -27,7 +27,7 @@ public class DetectorFactory {
             };
         }
         else if (modelFilename.equals("yolov5n-fp16.tflite")) {
-            labelFilename = "file:///android_asset/coco.txt";
+            labelFilename = "file:///android_asset/classes.txt";
             isQuantized = false;
             inputSize = 640;
             output_width = new int[]{40, 20, 10};
@@ -37,7 +37,7 @@ public class DetectorFactory {
             };
         }
         else if (modelFilename.equals("yolov5n-int8.tflite")) {
-            labelFilename = "file:///android_asset/coco.txt";
+            labelFilename = "file:///android_asset/classes.txt";
             isQuantized = false;
             inputSize = 320;
             output_width = new int[]{40, 20, 10};

@@ -39,7 +39,7 @@ import java.util.List;
 public class MainActivity extends AppCompatActivity {
 
     public static final float MINIMUM_CONFIDENCE_TF_OD_API = 0.05f;
-    private String[] mTestImages = {"kite.jpg","kite1.jpg", "kite2.jpg", "kite3.jpg", "kite4.jpg", "kite5.jpg"};
+    private String[] mTestImages = {"01.jpg", "02.jpg", "03.jpg", "04.jpg"};
     private int mImageIndex = 0;
 
     @Override
@@ -116,7 +116,7 @@ public class MainActivity extends AppCompatActivity {
 
     private static final String TF_OD_API_MODEL_FILE = "yolov5n-int8.tflite";
 
-    private static final String TF_OD_API_LABELS_FILE = "file:///android_asset/coco.txt";
+    private static final String TF_OD_API_LABELS_FILE = "file:///android_asset/classes.txt";
 
     // Minimum detection confidence to track a detection.
     private static final boolean MAINTAIN_ASPECT = true;
